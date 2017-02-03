@@ -251,21 +251,35 @@ header{
 	    	background-position: center;
 	    	cursor: pointer;
 
+	    	.write_up{
+	    		background: rgba(0,0,0,0.7);
+	    		width: 100%;
+	    		position: absolute;
+	    		bottom: 0;
+	    		color: $white;
+	    		border-radius: 8px 8px 0 0;
+	    		display: none;
+
+	    		p{
+	    			padding: 20px 0;
+	    		}
+	    	}
+
 	    	&:hover{
 				background-size: cover;
 
-				&:after{
-					background: #333;
-				    background: rgba(0,0,0,.8);
-				    border-radius: 8px 8px 0 0;
-				    color: #fff;
-				    content: attr(title);
-					left: 0px;
-					bottom: 0px;
-				    padding: 20px 0;
-				    position: absolute;
-				    width: 100%;
-				}
+				// &:after{
+				// 	background: #333;
+				//     background: rgba(0,0,0,.8);
+				//     border-radius: 8px 8px 0 0;
+				//     color: #fff;
+				//     content: attr(title);
+				// 	left: 0px;
+				// 	bottom: 0px;
+				//     padding: 20px 0;
+				//     position: absolute;
+				//     width: 100%;
+				// }
 			}
 
 	    	span{

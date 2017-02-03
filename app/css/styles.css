@@ -165,19 +165,18 @@ header {
       background-size: contain;
       background-position: center;
       cursor: pointer; }
+      #work aside .workbox .write_up {
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        color: #ffffff;
+        border-radius: 8px 8px 0 0;
+        display: none; }
+        #work aside .workbox .write_up p {
+          padding: 20px 0; }
       #work aside .workbox:hover {
         background-size: cover; }
-        #work aside .workbox:hover:after {
-          background: #333;
-          background: rgba(0, 0, 0, 0.8);
-          border-radius: 8px 8px 0 0;
-          color: #fff;
-          content: attr(title);
-          left: 0px;
-          bottom: 0px;
-          padding: 20px 0;
-          position: absolute;
-          width: 100%; }
       #work aside .workbox span {
         position: absolute;
         width: 100%;
