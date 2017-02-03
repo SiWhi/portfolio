@@ -12,16 +12,7 @@ html {
 
 body {
   position: relative;
-  background: #f0eeef;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f0eeef 0%, #f0eeef 32%, #A4CFE9 60%, #f0eeef 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f0eeef 0%, #f0eeef 32%, #A4CFE9 60%, #f0eeef 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f0eeef 0%, #f0eeef 32%, #A4CFE9 60%, #f0eeef 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0eeef', endColorstr='#7db9e8',GradientType=0 );
-  /* IE6-9 */
+  background-color: #f0eeef;
   font-family: 'Montserrat', sans-serif;
   color: #323232;
   text-align: center;
@@ -146,7 +137,7 @@ header {
         border-top: 1px solid #ffde25;
         transition: all 1s ease-in-out; }
       #skills aside .box3 .active {
-        height: 25%; }
+        height: 35%; }
     #skills aside .box4 {
       background: url(../img/jq.jpg);
       background-repeat: no-repeat;
@@ -161,7 +152,7 @@ header {
         border-top: 1px solid #0f1925;
         transition: all 1s ease-in-out; }
       #skills aside .box4 .active {
-        height: 40%; }
+        height: 45%; }
 
 #work {
   margin-top: 100px; }
