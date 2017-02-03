@@ -52,10 +52,10 @@
 		<section id="work">
 			<h3>Work</h3>
 			<aside>
-				<div class="workbox wbox1" title="Design | HTML5 | CSS3 | JQuery"><div class="write_up"><p>Design | HTML5 | CSS3 | jQuery</p></div></div>
-				<div class="workbox wbox2" title="Asked to write a guest blog about an advanced email technique"><span onclick="Pop('https://www.displayblock.com/2015/11/04/create-great-pixel-art-emails','Pixel Art Emails','800','400');" href="javascript:void(0);"></span></div>
-				<div class="workbox wbox3" title="Landing page and responsive email design for charity appeal"><span onclick="Pop('img/DTwork.gif','Dogs Trust Work','800','451');" href="javascript:void(0);"></span></div>
-				<div class="workbox wbox4" title="Responsive Email design"><span onclick="Pop('img/wbox4.jpg','Responsive email design','800','500');" href="javascript:void(0);"></span></div>
+				<div class="workbox wbox1"><div class="write_up"><p>Design | HTML5 | CSS3 | jQuery</p></div><span onclick="Pop('http://www.lucyandsimon.com','Lucy and Simon\'s wedding','800','400');" href="javascript:void(0);"></span></div>
+				<div class="workbox wbox2"><div class="write_up"><p>Asked to write a guest blog about an advanced email technique</p></div><span onclick="Pop('https://www.displayblock.com/2015/11/04/create-great-pixel-art-emails','Pixel Art Emails','800','400');" href="javascript:void(0);"></span></div>
+				<div class="workbox wbox3"><div class="write_up"><p>Landing page and responsive email design for charity appeal</p></div><span onclick="Pop('img/DTwork.gif','Dogs Trust Work','800','451');" href="javascript:void(0);"></span></div>
+				<div class="workbox wbox4"><div class="write_up"><p>Responsive email design</p></div><span onclick="Pop('img/wbox4.jpg','Responsive email design','800','500');" href="javascript:void(0);"></span></div>
 			</aside>
 		</section>
 		<section id="contact">
@@ -79,9 +79,15 @@
 			    return false;
 			});
 
-			$('.workbox').hover(function() {
-				$(this).find('.write_up').slideToggle('slow');
-			});
+			if ( $(window).width() > 600) {
+				$('.workbox').hover(function() {
+					$(this).find('.write_up').slideToggle('fast');
+				});
+
+				$('.workbox').mouseout(function() {
+					$(this).find('.write_up').slideToggle('fast');
+				});
+			};
 
 			// Pop Up windows
 

@@ -77,8 +77,11 @@ header {
   width: 80%;
   margin: 0 auto; }
   #skills aside {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     #skills aside .skillbox {
       width: 140px;
@@ -151,7 +154,9 @@ header {
 #work {
   margin-top: 100px; }
   #work aside {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     box-shadow: 0px 3px 15px 5px rgba(0, 0, 0, 0.5); }
     #work aside .workbox {
@@ -200,8 +205,11 @@ header {
 #contact {
   padding: 100px 0; }
   #contact .contact-wrap {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 0 auto;
     text-decoration: none;
@@ -221,7 +229,9 @@ footer {
   header h1 {
     top: 50px; }
   #work aside .workbox {
-    width: 100%; } }
+    width: 100%; }
+    #work aside .workbox .write_up {
+      display: block; } }
 
 @media (max-width: 1000px) {
   header .dnarrow {
