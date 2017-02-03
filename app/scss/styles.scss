@@ -1,0 +1,361 @@
+// - - - - - - - - - - Variables
+
+$primary: #323232;
+$grey: #f0eeef;
+$white: #ffffff;
+
+// - - - - - - - - - - Global Styles
+
+html{
+	font-family: 'Montserrat', helvetica, arial, sans-serif;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+// - - - - - - - - - - Clear fix
+
+.clearfix:after{
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+body{
+	position: relative;
+	
+
+	// gradient
+
+	// background: #f0eeef; /* Old browsers */
+	// background: -moz-linear-gradient(top,  #f0eeef 0%, #f0eeef 32%, #A4CFE9 60%, #f0eeef 100%); /* FF3.6-15 */
+	// background: -webkit-linear-gradient(top,  #f0eeef 0%,#f0eeef 32%, #A4CFE9 60%, #f0eeef 100%); /* Chrome10-25,Safari5.1-6 */
+	// background: linear-gradient(to bottom,  #f0eeef 0%,#f0eeef 32%, #A4CFE9 60%, #f0eeef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0eeef', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+	background-color: $grey;
+	font-family: 'Montserrat', sans-serif;
+	color: $primary;
+	text-align: center;
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+h1,h2{
+	font-family: 'Pacifico', cursive;
+}
+
+h3{
+	font-size: 1.5em;
+	margin-bottom: 50px;
+}
+
+// - - - - - - - - - - - Header 
+
+header{
+	position: relative;
+	background: url(../img/bg2.jpg); 
+	background-size: cover;
+
+	video{
+		min-width: 100%;
+		max-width: 100%;
+		z-index: 1;
+	}
+
+	h1{
+		position: absolute;
+		z-index: 2;
+		top: 100px;
+		left: calc(50% - 90px);
+		font-size: 34px;
+
+		.nameColor{
+			color: $white;
+		}
+	}
+	.dnarrow{
+		background: url(../img/dnarrow.png) no-repeat center;
+		background-size: contain;
+		width: 50px;
+		height: 100px;
+		margin: 0 auto;
+		position: absolute;
+		top: 200px;
+		left: calc(50% - 25px);
+		display: block;
+		cursor: pointer;
+	}
+}
+
+// - - - - - - - - - - - Title Headers
+
+#title{
+	padding-top: 50px;
+	padding-bottom: 150px;
+	width: 800px;
+	max-width: 80%;
+	margin: 0 auto;
+
+	h2{
+		font-size: 32px;
+		line-height: 45px;
+		margin-bottom: 75px;
+
+		.nameColor1{
+			color: #666666;
+		}
+
+		.nameColor2{
+			color: #939393;
+		}
+	}
+
+	p{
+		line-height: 1.5;
+	}
+}
+
+
+/* - - - - - - - - - - - Skills - - - - - - - - - - - */
+
+#skills{
+	max-width: 1000px;
+	width: 80%;
+	margin: 0 auto;
+
+	aside{
+		display: flex;
+	    justify-content: space-around;
+	    flex-wrap: wrap;
+		// margin-bottom: 50px;
+
+		.skillbox{
+			width: 140px;
+			height: 140px;
+			background-color: white;
+			margin: 0 50px 50px 50px;
+			box-shadow: 6px 6px 10px rgba(0,0,0,0.2);
+			position: relative;
+		}
+
+		.box1{
+			background: url(../img/html5.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+
+			.level1{
+				width: 100%;
+				height: 0%;
+				background-color: rgba(243,100,44,0.4);
+				position: absolute;
+				bottom: 0;
+				border-top: 1px solid #e84c23;
+				transition: all 1s ease-in-out;
+			}
+			.active {
+			  height: 80%;
+			}
+		}
+
+		.box2{
+			background: url(../img/css3.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+
+			.level2{
+				width: 100%;
+				height: 0%;
+				background-color: rgba(28,136,199,0.4);
+				position: absolute;
+				bottom: 0;
+				border-top: 1px solid #1b73ba;
+				transition: all 1s ease-in-out;
+			}
+				
+			.active {
+			  height: 70%;
+			}
+		}
+
+		.box3{
+			background: url(../img/js.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+
+
+			.level3{
+				width: 100%;
+				height: 0%;
+				background-color: rgba(233,202,50,0.4);
+				position: absolute;
+				bottom: 0;
+				border-top: 1px solid #ffde25;
+				transition: all 1s ease-in-out;
+			}
+				
+			.active {
+			  height: 35%;
+			}
+		}
+
+		.box4{
+			background: url(../img/jq.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+
+			.level4{
+				width: 100%;
+				height: 0%;
+				background-color: rgba(7,105,173,0.4);
+				position: absolute;
+				bottom: 0;
+				border-top: 1px solid #0f1925;
+				transition: all 1s ease-in-out;
+			}
+				
+			.active {
+			  height: 45%;
+			}
+		}
+	}
+}
+
+
+// - - - - - - - - - - - Work
+
+
+#work{
+	margin-top: 100px;
+
+	aside{
+		display: flex;
+	    flex-wrap: wrap;
+	    box-shadow: 0px 3px 15px 5px rgba(0,0,0,0.5);
+
+	    .workbox{
+	    	background-color: white;
+	    	height: 300px;
+	    	width: 50%;
+	    	min-width: 290px;
+	    	margin: 0 auto;
+	    	position: relative;
+	    	background-repeat: no-repeat;
+	    	background-size: contain;
+	    	background-position: center;
+	    	cursor: pointer;
+
+	    	&:hover{
+				background-size: cover;
+
+				&:after{
+					background: #333;
+				    background: rgba(0,0,0,.8);
+				    border-radius: 8px 8px 0 0;
+				    color: #fff;
+				    content: attr(title);
+					left: 0px;
+					bottom: 0px;
+				    padding: 20px 0;
+				    position: absolute;
+				    width: 100%;
+				}
+			}
+
+	    	span{
+	    		position: absolute;
+	    		width: 100%;
+	    		height: 100%;
+	    		top: 0px;
+	    		left: 0px;
+	    		z-index: 1;
+	    	}
+	    }
+
+	    .wbox1{
+	    	background-image:url("../img/wbox1.jpg");
+	    	background-color: #e4f0f9;
+	    }
+		
+		.wbox2{
+	    	background-image:url("../img/wbox2.jpg");
+	    	background-color: #eaeaea;
+	    }
+
+	    .wbox3{
+	    	background-image:url("../img/wbox3.jpg");
+	    	background-color: #000;
+	    }
+
+	    .wbox4{
+	    	background-image:url("../img/wbox4.jpg");
+	    	background-color: #272821;
+	    }
+	}
+}
+
+// - - - - - - - - - - - Get in touch
+
+#contact{
+	padding: 100px 0;
+
+	.contact-wrap{
+		display: flex;
+        justify-content: center;
+        align-items: center;
+		margin: 0 auto;
+		text-decoration: none;
+		color: $primary;
+
+		.email{
+			background: url(../img/email.png) no-repeat;
+			background-position: center;
+			background-size: contain;
+			padding: 20px;
+			margin: 10px;
+		}
+	}
+}
+
+// - - - - - - - - - - - Footer
+
+footer{
+	padding: 40px;
+	background-color: rgba(0,0,0,0.2);
+}
+
+
+
+// - - - - - - - - - - - Media Queries
+
+
+@media (max-width:600px){
+	header{
+
+		h1{
+		top: 50px;
+	}
+}
+
+	#work{
+		aside{
+			.workbox{
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width:1000px){
+	header{
+		.dnarrow{
+			display: none;
+		}
+	}
+}

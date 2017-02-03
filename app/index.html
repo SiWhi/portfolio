@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Simon White - Front End Developer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/reset.css" type="text/css">
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" /> 
+		<link rel="icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-76337892-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<header>
+			<video muted autoplay loop poster="img/bg2.jpg">
+				<source src="img/pete6.mp4" type="video/mp4">
+			</video>
+			<h1>Simon<span class="nameColor">White</span></h1>
+			<div class="dnarrow"></div>
+		</header>
+		<section id="title">
+			<h2>
+				Designer<br><span class="nameColor1">
+				Developer</span><br><span class="nameColor2">
+				Email Marketer</span>
+			</h2>
+			<p>That's Pete. He's not my dog...<br>I am shamelessly using him to win you over.<br><br>I'm a London-based self-taught front end developer with a background in digital marketing, where I spent five years specialising in design and email marketing.<br><br>
+			You can find out what I'm capable of below and if you have any questions then please don't hesitate to get in touch.</p>
+		</section>
+		<section id="skills">
+			<h3>Skills</h3>
+			<aside>
+				<div class="skillbox box1"><div class="level1"></div></div>
+				<div class="skillbox box2"><div class="level2"></div></div>
+				<div class="skillbox box3"><div class="level3"></div></div>
+				<div class="skillbox box4"><div class="level4"></div></div>
+			</aside>
+			<p>Adobe Creative Cloud<br>(Ps | AI | Id | Pr | Ae)<br>SASS<br><br>Marketing<br>Analytics<br>A/B Testing</p>
+		</section>
+		<section id="work">
+			<h3>Work</h3>
+			<aside>
+				<div class="workbox wbox1" title="Design | HTML5 | CSS3 | JQuery"><span onclick="Pop('http://www.lucyandsimon.com','Lucy and Simon','800','400');" href="javascript:void(0);"></span></div>
+				<div class="workbox wbox2" title="Asked to write a guest blog about an advanced email technique"><span onclick="Pop('https://www.displayblock.com/2015/11/04/create-great-pixel-art-emails','Pixel Art Emails','800','400');" href="javascript:void(0);"></span></div>
+				<div class="workbox wbox3" title="Landing page and responsive email design for charity appeal"><span onclick="Pop('img/DTwork.gif','Dogs Trust Work','800','451');" href="javascript:void(0);"></span></div>
+				<div class="workbox wbox4" title="Responsive Email design"><span onclick="Pop('img/wbox4.jpg','Responsive email design','800','500');" href="javascript:void(0);"></span></div>
+			</aside>
+		</section>
+		<section id="contact">
+			<h3>Get in touch</h3>
+				<a href="mailto:simondwhite@gmail.com" class="contact-wrap">
+					<div class="email"></div>
+					<h4>simondwhite@gmail.com</h4>
+				</a>
+		</section>
+		<footer>
+			<h5>Copyright Simon White</h5>
+		</footer>
+
+		<script type="text/javascript">
+
+
+			$('.dnarrow').click(function(){
+			    $('html, body').animate({
+			        scrollTop: $('#title').offset().top
+			    }, 1000);
+			    return false;
+			});
+
+			// Pop Up windows
+
+			function Pop(url, title, w, h) {
+			// dual-screen set up
+				var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+				var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+				width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+				height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+			var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+			var top = ((height / 2) - (h / 2)) + dualScreenTop;
+			var newWindow = window.open(url, title, 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+
+			// Puts focus on the newWindow
+				if (window.focus) {
+					newWindow.focus();
+				}
+			}
+		</script>
+	</body>
+</html>
