@@ -1,3 +1,4 @@
+// npm init - enter details
 // npm install --save-dev gulp
 // npm install gulp-sass browser-sync gulp-imagemin gulp-cache gulp-autoprefixer run-sequence del --save-dev
 
