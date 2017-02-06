@@ -55,21 +55,40 @@ header {
     cursor: pointer; }
 
 #title {
-  padding-top: 50px;
-  padding-bottom: 150px;
+  padding-top: 20px;
+  padding-bottom: 100px;
   width: 800px;
   max-width: 80%;
   margin: 0 auto; }
   #title h2 {
     font-size: 32px;
     line-height: 45px;
-    margin-bottom: 75px; }
+    margin-bottom: 95px; }
     #title h2 .nameColor1 {
       color: #666666; }
     #title h2 .nameColor2 {
       color: #939393; }
   #title p {
-    line-height: 1.5; }
+    line-height: 1.5;
+    position: relative; }
+    #title p:before {
+      width: 200px;
+      height: 1px;
+      color: #323232;
+      background-color: #323232;
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: calc(50% - 100px); }
+    #title p:after {
+      width: 200px;
+      height: 1px;
+      color: #323232;
+      background-color: #323232;
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: calc(50% - 100px); }
 
 /* - - - - - - - - - - - Skills - - - - - - - - - - - */
 #skills {
@@ -163,7 +182,6 @@ header {
       background-color: white;
       height: 300px;
       width: 50%;
-      min-width: 290px;
       margin: 0 auto;
       position: relative;
       background-repeat: no-repeat;
@@ -211,6 +229,8 @@ header {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0 auto;
     text-decoration: none;
     color: #323232; }
