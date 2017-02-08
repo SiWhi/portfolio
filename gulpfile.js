@@ -12,8 +12,8 @@ var runSequence = require('run-sequence');
 var del = require('del');
 
 gulp.task('sass', function() {
-	return gulp.src('app/scss/**/*.scss')
-	.pipe(sass())
+	gulp.src('app/scss/**/*.scss')
+	.pipe(sass().on('error', sass.logError))
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({
 		stream: true
