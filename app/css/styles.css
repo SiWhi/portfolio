@@ -221,7 +221,8 @@ header {
       background-color: #272821; }
 
 #contact {
-  padding: 100px 0; }
+  padding: 100px 0;
+  display: inline-block; }
   #contact .contact-wrap {
     display: -ms-flexbox;
     display: flex;
