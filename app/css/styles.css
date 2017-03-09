@@ -123,7 +123,7 @@ header {
         border-top: 1px solid #e84c23;
         transition: all 1s ease-in-out; }
       #skills aside .box1 .active {
-        height: 80%; }
+        height: 85%; }
     #skills aside .box2 {
       background: url(../img/css3.jpg);
       background-repeat: no-repeat;
@@ -138,7 +138,7 @@ header {
         border-top: 1px solid #1b73ba;
         transition: all 1s ease-in-out; }
       #skills aside .box2 .active {
-        height: 70%; }
+        height: 80%; }
     #skills aside .box3 {
       background: url(../img/js.jpg);
       background-repeat: no-repeat;
@@ -153,7 +153,7 @@ header {
         border-top: 1px solid #ffde25;
         transition: all 1s ease-in-out; }
       #skills aside .box3 .active {
-        height: 35%; }
+        height: 55%; }
     #skills aside .box4 {
       background: url(../img/jq.jpg);
       background-repeat: no-repeat;
@@ -168,7 +168,7 @@ header {
         border-top: 1px solid #0f1925;
         transition: all 1s ease-in-out; }
       #skills aside .box4 .active {
-        height: 45%; }
+        height: 55%; }
 
 #work {
   margin-top: 100px; }
@@ -215,7 +215,7 @@ header {
       background-color: #eaeaea; }
     #work aside .wbox3 {
       background-image: url("../img/wbox3.jpg");
-      background-color: #000; }
+      background-color: #fff; }
     #work aside .wbox4 {
       background-image: url("../img/wbox4.jpg");
       background-color: #272821; }
